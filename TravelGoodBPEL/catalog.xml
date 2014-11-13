@@ -2,4 +2,5 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
     <nextCatalog catalog="nbproject/private/retriever/catalog.xml"/>
     <system systemId="file:/C:/Users/Morten/Documents/NetBeansProjects/LameDuckService/src/conf/xml-resources/web-services/LameDuckService/wsdl/LameDuckService.wsdl" uri="src/LameDuckService.wsdl"/>
+    <system systemId="file:/C:/Users/Morten/Documents/HotelReservationServicesSOAP/src/conf/xml-resources/web-services/NewWebServiceFromWSDL/wsdl/HotelReservation.wsdl" uri="src/HotelReservation.wsdl"/>
 </catalog>

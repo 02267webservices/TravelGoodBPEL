@@ -11,7 +11,10 @@
     xmlns:sxat="http://www.sun.com/wsbpel/2.0/process/executable/SUNExtension/Attachment"
     xmlns:sxeh="http://www.sun.com/wsbpel/2.0/process/executable/SUNExtension/ErrorHandling">
     <import namespace="ws.LameDuckService" location="file:/C:/Users/Morten/Documents/NetBeansProjects/LameDuckService/src/conf/xml-resources/web-services/LameDuckService/wsdl/LameDuckService.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+    <import namespace="http://enterprise.netbeans.org/bpel/HotelReservationWrapper" location="HotelReservationWrapper.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+    <import namespace="http://HotelReservationServices" location="file:/C:/Users/Morten/Documents/HotelReservationServicesSOAP/src/conf/xml-resources/web-services/NewWebServiceFromWSDL/wsdl/HotelReservation.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
     <partnerLinks>
+        <partnerLink name="HotelReservationPartnerLink" xmlns:tns="http://enterprise.netbeans.org/bpel/HotelReservationWrapper" partnerLinkType="tns:HotelReservationServicesLinkType" partnerRole="HotelReservationServicesRole"/>
         <partnerLink name="LameDuckServicePartnerLink" xmlns:tns="ws.LameDuckService" partnerLinkType="tns:LameDuckService" myRole="LameDuckServiceGetFlightsPortTypeRole"/>
     </partnerLinks>
     <sequence>
