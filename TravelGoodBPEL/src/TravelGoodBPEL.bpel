@@ -15,5 +15,6 @@
         <partnerLink name="LameDuckServicePartnerLink" xmlns:tns="ws.LameDuckService" partnerLinkType="tns:LameDuckService" myRole="LameDuckServiceGetFlightsPortTypeRole"/>
     </partnerLinks>
     <sequence>
-   </sequence>
+        <receive name="Receive1" createInstance="yes"/>
+    </sequence>
 </process>
