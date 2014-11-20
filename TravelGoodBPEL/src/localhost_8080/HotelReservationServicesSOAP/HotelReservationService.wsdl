@@ -1,40 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<definitions name="HotelReservationServices" targetNamespace="http://HotelReservationServices"
-    xmlns="http://schemas.xmlsoap.org/wsdl/"
-    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://HotelReservationServices" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1.1 (branches/2.1-6844; 2011-07-29T12:07:24+0000) JAXWS-RI/2.2.5 JAXWS/2.2. --><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://HotelReservationServices" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="HotelReservationServices" targetNamespace="http://HotelReservationServices">
     <types>
-        <xsd:schema targetNamespace="http://HotelReservationServices" xmlns:tns="http://HotelReservationServices">
+        <xsd:schema xmlns:tns="http://HotelReservationServices" targetNamespace="http://HotelReservationServices">
             <xsd:complexType name="CreditCardType">
                 <xsd:sequence>
-                    <xsd:element name="name" type="xsd:string"></xsd:element>
-                    <xsd:element name="number" type="xsd:float"></xsd:element>
-                    <xsd:element name="expirationMonth" type="xsd:dateTime"></xsd:element>
-                    <xsd:element name="expirationYear" type="xsd:dateTime"></xsd:element>
+                    <xsd:element name="name" type="xsd:string"/>
+                    <xsd:element name="number" type="xsd:float"/>
+                    <xsd:element name="expirationMonth" type="xsd:dateTime"/>
+                    <xsd:element name="expirationYear" type="xsd:dateTime"/>
                 </xsd:sequence>
             </xsd:complexType>
             <xsd:complexType name="HotelType">
                 <xsd:sequence>
-                    <xsd:element name="name" type="xsd:string"></xsd:element>
-                    <xsd:element name="address" type="xsd:string"></xsd:element>
-                    <xsd:element name="bookingNumber" type="xsd:int"></xsd:element>
-                    <xsd:element name="priceForWholeStay" type="xsd:double"></xsd:element>
-                    <xsd:element name="paymentGuarantee" type="xsd:boolean"></xsd:element>
+                    <xsd:element name="name" type="xsd:string"/>
+                    <xsd:element name="address" type="xsd:string"/>
+                    <xsd:element name="bookingNumber" type="xsd:int"/>
+                    <xsd:element name="priceForWholeStay" type="xsd:double"/>
+                    <xsd:element name="paymentGuarantee" type="xsd:boolean"/>
                 </xsd:sequence>
             </xsd:complexType>
             <xsd:complexType name="FaultType">
                 <xsd:sequence>
-                    <xsd:element name="creditCardInfo" type="tns:CreditCardType"></xsd:element>
+                    <xsd:element name="creditCardInfo" type="tns:CreditCardType"/>
                 </xsd:sequence>
             </xsd:complexType>
             <xsd:complexType name="HotelsType">
                 <xsd:sequence>
-                    <xsd:element name="hotels" type="tns:HotelType" maxOccurs="unbounded" minOccurs="0"></xsd:element>
+                    <xsd:element name="hotels" type="tns:HotelType" maxOccurs="unbounded" minOccurs="0"/>
                 </xsd:sequence>
             </xsd:complexType>
-            <xsd:element name="creditCardElement" type="tns:CreditCardType"></xsd:element>
-            <xsd:element name="hotelElement" type="tns:HotelType"></xsd:element>
-            <xsd:element name="faultElement" type="tns:FaultType"></xsd:element>
+            <xsd:element name="creditCardElement" type="tns:CreditCardType"/>
+            <xsd:element name="hotelElement" type="tns:HotelType"/>
+            <xsd:element name="faultElement" type="tns:FaultType"/>
         </xsd:schema>
     </types>
     <message name="getHotelsRequest">
@@ -111,7 +107,7 @@
     </binding>
     <service name="HotelReservationService">
         <port name="HotelReservationServicesBindingPort" binding="tns:HotelReservationServicesBinding">
-            <soap:address location="http://localhost:${HttpDefaultPort}/service"/>
+            <soap:address location="http://localhost:8080/HotelReservationServicesSOAP/HotelReservationService"/>
         </port>
     </service>
 </definitions>
