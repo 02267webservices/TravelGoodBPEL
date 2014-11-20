@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <nextCatalog catalog="nbproject/private/retriever/catalog.xml"/>
+    <system systemId="file:/C:/Users/MortenH/Documents/HotelReservationServicesSOAP/src/java/ws/HotelReservation.wsdl" uri="src/HotelReservation.wsdl"/>
+    <system systemId="file:/C:/Users/MortenH/Documents/LameDuckService/src/java/dtu/ws/group8/lameduck/LameDuckWSDL.wsdl" uri="src/LameDuckWSDL.wsdl"/>
+    <system systemId="file:/C:/Users/MortenH/Documents/LameDuckService/src/java/dtu/ws/group8/lameduck/types/LameDuckSchema.xsd" uri="src/types/LameDuckSchema.xsd"/>
+</catalog>
