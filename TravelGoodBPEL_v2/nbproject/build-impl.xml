@@ -3,7 +3,7 @@
     *** GENERATED FROM project.xml - DO NOT EDIT ***
     ***           EDIT ../build.xml INSTEAD      ***
 -->
-<project name="TravelGoodBPEL-impl" default="default" basedir="..">
+<project name="TravelGoodBPEL_v2-impl" default="default" basedir="..">
     <target name="default" depends="dist_se"/>
     <!-- 
         INITIALIZATION SECTION 
@@ -85,10 +85,7 @@
         <!-- Empty placeholder for easier customization. -->
         <!-- You can override this target in the ../build.xml file. -->
     </target>
-    <target name="deps-clean" depends="init" unless="${no.dependencies}">
-        <ant target="clean" inheritall="false" antfile="${project.HotelReservationServicesSOAP}/build.xml"/>
-        <ant target="clean" inheritall="false" antfile="${project.LameDuckService}/build.xml"/>
-    </target>
+    <target name="deps-clean" depends="init" unless="${no.dependencies}"/>
     <target name="do-clean" depends="init,pre-clean">
         <delete dir="${build.dir}"/>
         <delete dir="${dist.dir}"/>
