@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
     <system systemId="LameDuckService/dtu/ws/group8/lameduck/LameDuckWSDL.wsdl" uri="nb-uri:LameDuckService#src/java/dtu/ws/group8/lameduck/LameDuckWSDL.wsdl"/>
-    <system systemId="http://10.16.167.150:8080/HotelReservationServicesSOAP/HotelReservationService?wsdl" uri="src/10.16.167.150_8080/HotelReservationServicesSOAP/HotelReservationService.wsdl"/>
+    <system systemId="file:/C:/Users/MortenH/Documents/HotelReservationServicesSOAP/src/java/ws/HotelReservation.wsdl" uri="src/HotelReservation.wsdl"/>
     <nextCatalog catalog="nbproject/private/retriever/catalog.xml"/>
     <nextCatalog catalog="nbproject/private/retriever/catalog.xml"/>
 </catalog>

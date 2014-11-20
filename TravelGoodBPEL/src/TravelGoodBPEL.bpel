@@ -20,7 +20,10 @@
     <import namespace="http://HotelReservationServices" location="http://10.16.139.202:8080/HotelReservationServicesSOAP/HotelReservationService?wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
     <import namespace="http://enterprise.netbeans.org/bpel/HotelReservationServicesWrapper" location="HotelReservationServicesWrapper.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
     <import namespace="http://HotelReservationServices" location="http://10.16.167.150:8080/HotelReservationServicesSOAP/HotelReservationService?wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+    <import namespace="http://enterprise.netbeans.org/bpel/HotelReservationWrapperWrapper" location="HotelReservationWrapperWrapper.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+    <import namespace="http://HotelReservationServices" location="file:/C:/Users/MortenH/Documents/HotelReservationServicesSOAP/src/java/ws/HotelReservation.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
     <partnerLinks>
+        <partnerLink name="HotelReservationPartnerLink" xmlns:tns="http://enterprise.netbeans.org/bpel/HotelReservationWrapper" partnerLinkType="tns:HotelReservationServicesLinkType" partnerRole="HotelReservationServicesRole"/>
         <partnerLink name="LameDuckWSDLPartnerLink" xmlns:tns="http://enterprise.netbeans.org/bpel/LameDuckWSDLWrapper" partnerLinkType="tns:LameDuckWSDLLinkType" myRole="LameDuckWSDLRole"/>
     </partnerLinks>
     <variables>
